@@ -1,0 +1,16 @@
+spring:
+  jpa:
+    show-sql: true
+  datasource:
+    username: "root"
+    password: "saikiran"
+    url: "jdbc:mysql://192.168.43.217:3306/saikiran"
+    driver-class-name: com.mysql.jdbc.Driver"
+  profiles: dev
+server:
+  port: 8081
+---
+spring:
+  profiles: test
+server:
+  port: 8095
